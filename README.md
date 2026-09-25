@@ -26,6 +26,11 @@ DeepSeek Harness (dsh) web 插件：主聊天流的"思考"块展开后正文限
 - 自动跟随：对每个已展开思考正文挂 MutationObserver（characterData/subtree），在用户处于底部 25px 内时 `scrollTop = scrollHeight`。
 - 宿主半边仅在 settings 服务可用时注册命名空间（回调式注入，缺失时静默跳过）。
 
+## 版本要求
+
+- v0.2.0 起需要 DSH `0.1.7-rc.2`+（settings 系统改用 volatile Config + `configForms`/`plugins.item`）。
+- v0.1.x 适配 DSH `0.1.5-rc.x` 的 `settingsScope`/`settings.plugin.item` 接线。
+
 ## 安装（link: 本地开发）
 
 ```bash
